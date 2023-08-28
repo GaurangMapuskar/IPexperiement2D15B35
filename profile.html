@@ -5,20 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
+    <link href="styles.css">
+    <style>
+        header{
+    text-align: center;
+    background-color: azure;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid;
+}
+#profile{
+    padding: 20px;
+}
+#row-profile{
+    border:  2px solid black;
+}
+#div-profile{
+    display: flex;
+    border: 1px solid;
+    border-radius: 5px;
+}
+#div-profile img{
+    border-radius: 150px;
+}
+#profile-name{
+    width: 100%;
+    border: 1px solid gray;
+    padding-top: 50px;
+    padding-left: 20px;
+    margin: 20px;
+    border-radius: 30px;
+}
+    </style>
 </head>
 
 <body>
     <header>
         <h1>Gaurang Profile</h1>
-        <hr>
     </header>
     <main>
-        <table>
-            <tr>
-                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                <td><img src="profile_img.png" width="200px" height="200px"></td>
-                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                <td><strong>Name : </strong>Gaurang Milind Mapuskar<br>
+        <div id="div-profile">
+                <img src="profile_img.png" width="200px" height="200px" id="profile">
+                <div id="profile-name">
+                <strong>Name : </strong>Gaurang Milind Mapuskar<br>
                     <strong>Age :</strong> 19 &nbsp;&nbsp;&nbsp;&nbsp; <strong>Gender :</strong> Male <br>
                     <strong>Contact :</strong> 9969780696 &nbsp;&nbsp;&nbsp;&nbsp; <strong>Email :</strong>
                     2021.gaurang.mapuskar@ves.ac.in <br>
@@ -26,12 +55,9 @@
                     <audio controls src="" type="audio/mpeg">
                         This is audio file for Introduction.
                     </audio>
-                </td>
-            </tr>
-            <tr>
-                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-            </tr>
-        </table>
+                </div>
+            
+        </div>
         <table>
             <tr>
                 <td>
